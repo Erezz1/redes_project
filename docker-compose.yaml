@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  server_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: server_app
+    container_name: server_app
+    restart: always
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      PORT: ${PORT}
+    volumes:
+      - ./:/app
