@@ -5,7 +5,7 @@ export class SeedService {
   seed() {
     return ({
       ok: true,
-      msg: 'Si jala, papi. xd'
+      msg: 'Endpoint actualizado'
     })
   }
 }
